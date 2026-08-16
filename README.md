@@ -3,6 +3,16 @@
 Kitab tanda-tanda buat yang kerja bareng AI: **gejala → penyakit → penangkal → mantra.**
 Disuling dari lumbung catatan engineering yang dipakai harian bertahun-tahun — semua isinya bekas luka beneran, bukan teori. Yang gak ada kejadiannya, gak ditulis di sini.
 
+## Buat yang AI-nya "suka halu"
+
+Kitab ini ditulis buat kamu yang udah tiga kali ganti langganan AI karena semuanya "halu" — dan belum sekali pun kepikiran meriksa yang ngetik pertanyaannya. Kabar baiknya: AI kamu baik-baik aja. Dia cuma pantulan — disetor kabur, baliknya kabur, dikemas rapi biar kamu seneng. Kabar buruknya: berarti selama ini kamu lagi frustasi sama gema suara sendiri.
+
+Di sini gak ada jampi prompt ajaib, gak ada "10 prompt rahasia biar AI kamu 10x". Isinya lebih murah dan lebih pait: cara nyatet, cara mutusin, cara belajar, dan cara nanya — biar yang megang alatnya layak megang. Alat cuma memperbesar isi kepala; kalau keluarannya berisik, cek dulu yang dimasukin.
+
+Penulisnya dulu juga gitu — makanya isi kitab ini bekas luka semua, bukan khotbah.
+
+AI-nya udah pinter. **Gantian.**
+
 ## Kenapa "primbon"
 
 Primbon itu kitab tanda-tanda: lihat gejalanya, tahu artinya, tahu penangkalnya. Kerja bareng AI ternyata butuh kitab yang persis begitu — bukan buku teori yang dibaca dari halaman satu, tapi kitab yang dibuka pas kejadian: *"AI gw kok jawabnya begini ya"* → cari tandanya → ketemu penyakitnya → pakai penangkalnya.
@@ -41,3 +51,4 @@ Kitab ini sulingan dari basis pengetahuan privat (ratusan berkas, dipakai harian
 ## Riwayat
 
 - 2026-08-12 — kitab lahir: sampul + mukadimah.
+- 2026-08-12 — seksi satir "Buat yang AI-nya suka halu" ditambahkan atas ketok pemilik; penulis: Claude (Anthropic).
