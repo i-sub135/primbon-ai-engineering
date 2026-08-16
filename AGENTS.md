@@ -77,7 +77,14 @@ Garapan dicukupkan di sini atas ketok pemilik; lanjut minggu berikutnya. Penggar
 1. **Kelar & udah di main:** README, 00, 01 (4 entri), 02 (3 entri), 03 (2 entri + bonus laci ADR 17 dokumen), 04 (2 entri + bonus laci belajar utuh 23 file). 12 commit.
 2. **Antrian, urut:** bab 05-primbon-kamus (bahan: kamus-istilah udah ada di bonus bab 04) → bab 06-primbon-mesin-amnesia (bahan: direktif kerja lumbung — minta ke pemilik kalau gak pegang) → bab 07-tambahan-ai (bahan: digest sesi, statusnya bumbu — minta ke pemilik) → 09-lampiran/kamus.md (istilah kitab sendiri).
 3. **Review pemilik:** bab 00–02 udah dicek pemilik; bab 03, 04, dan kedua bonus BELUM direview — jangan anggap final, siap-siap ralat.
-4. **Setelah semua bab:** review menyeluruh pemilik → keputusan pemilik soal buka repo ke publik → baru urusan corong (turunan).
+4. **Peta lumbung yang BELUM disuling** — bahan diskusi pemilik minggu depan, jangan dieksekusi sebelum diketok:
+   - `07-WORKFLOWS` (alur kerja git dkk) — generik, kandidat suling/bonus; belum disisir dalam.
+   - `templates/` — kandidat bonus karya paling murah: format catatan siap comot pembaca.
+   - `08-GLOSSARY` (kosakata personal) — digabung ke bahan bab 05 kamus.
+   - Pola handoff di `10-AI-CONTEXT` + `01-MOC` — POLA-nya buat bab 06 mesin-amnesia (isinya dapur, polanya halal).
+   - `06-PROMPTS` — WAJIB disisir dulu: kadar dapurnya belum ketahuan.
+   - SENGAJA TIDAK disuling (keputusan, bukan kelalaian): `03-ARCHITECTURE` (dapur murni + pola nempel kasus), isi dalam `02-PROJECTS` (segel, cuma pitfalls yang keluar), `05-BRAINSTORMING`/`00-INBOX`/`11-TO-DO` (kasta rendah + state operasional).
+5. **Setelah semua bab:** review menyeluruh pemilik → keputusan pemilik soal buka repo ke publik → baru urusan corong (turunan).
 
 ## Cara nulis Riwayat — buat penerus, jangan asal coret
 
@@ -93,6 +100,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-08-12 — peta lumbung belum-tersuling ditambahkan ke checkpoint (bahan diskusi pemilik minggu depan); penulis: Claude (Anthropic).
 - 2026-08-12 — CHECKPOINT dibuat (garapan dicukupkan atas ketok pemilik) + aturan sensor-NOL-sebelum-push masuk adat kerja dari luka adr-001; penulis: Claude (Anthropic).
 - 2026-08-12 — bonus bab 03 ditambahkan: laci ADR utuh (17 dokumen) atas ketok pemilik; penyamaran: nama proyek → Chatbot Kasir, nama pemilik → "pemilik"; penulis: Claude (Anthropic).
 - 2026-08-12 — bonus bab 04 diperluas dari 2 file jadi satu laci utuh (ketok pemilik: index tanpa detail bikin bingung pembaca); satu penyamaran dilakukan: nama produk internal → "kasir", sesuai segel; penulis: Claude (Anthropic).
