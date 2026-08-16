@@ -35,7 +35,7 @@ The service connects to **two PostgreSQL databases**:
 
 ## Forward Implication
 
-- New tables for Kantong domain ALWAYS land in chat DB. Never extend product DB schema from this repo.
+- New tables for Kasir domain ALWAYS land in chat DB. Never extend product DB schema from this repo.
 - Any time AI suggests writing to `product_product`, `product_stock`, etc., that suggestion is wrong. Push back.
 - Alembic only targets chat DB.
 
