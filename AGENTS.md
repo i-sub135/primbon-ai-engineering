@@ -65,6 +65,18 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 
 Slot 05–08 penomoran sengaja longgar — keluarga penyakit baru boleh lahir, lewat ketok pemilik.
 
+## Cara nulis Riwayat — buat penerus, jangan asal coret
+
+Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated file". Aturannya:
+
+- **Kapan nambah baris:** tiap perubahan yang mengubah isi atau makna — entri lahir, penangkal direvisi, ralat, entri dipensiun. Benerin typo doang gak perlu baris.
+- **Format baris:** `- TANGGAL — apa yang berubah + KENAPA berubah; penulis: [identitas publik].`
+  Bagian KENAPA itu yang membedakan riwayat dari coretan — tanpa alasan, penerus gak bisa bedain revisi sengaja dari kecelakaan.
+- **Penulis wajib ditulis** minimal tiap ganti penggarap, pakai identitas yang kebaca dunia luar (contoh: "Claude (Anthropic), model terpilih X" atau nama orangnya) — BUKAN istilah internal yang cuma kebaca di kampung sendiri. Ingat: label model = pilihan di antarmuka, bukan kesaksian.
+- **Append-only:** baris lama HARAM diedit atau dihapus, sesalah apa pun — kalau ada yang keliru, tambah baris ralat baru yang menunjuk baris salahnya. Riwayat yang bisa ditulis ulang bukan riwayat.
+- Contoh SALAH: `- 2026-08-13 — update.`
+  Contoh BENER: `- 2026-08-13 — PENANGKAL entri luka-1 ditambah aturan status; alasan: kasus luka yang belum dibenerin belum keatur; penulis: Claude (Anthropic).`
+
 ## Riwayat
 
 - 2026-08-12 — konstitusi penggarap lahir, setelah kena colok pemilik: kitab anti-amnesia wajib produksinya juga amnesia-proof. Ditulis oleh Claude (Anthropic) — model yang dipilih: Claude Fable 5; catatan jujur: label model adalah pilihan di antarmuka, bukan kesaksian mesin yang menjawab.
