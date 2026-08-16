@@ -57,7 +57,7 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 | 01-hukum-lumbung (4 entri) | KELAR | prinsip operasional lumbung |
 | 02-primbon-bekas-luka (3 entri) | KELAR | format arsip luka lumbung |
 | 03-primbon-keputusan (2 entri) | KELAR | format catatan keputusan + seksi Push-back |
-| 04-primbon-belajar (2 entri + 2 bonus karya asli) | KELAR | peta belajar lumbung |
+| 04-primbon-belajar (2 entri + bonus: 1 laci belajar utuh dari lumbung, 22 file) | KELAR | peta belajar lumbung |
 | 05-primbon-kamus | ANTRI | kamus lumbung (arti harfiah + analogi ber-namespace + riwayat revisi analogi) |
 | 06-primbon-mesin-amnesia | ANTRI | direktif kerja lumbung buat agen (nulis buat pembaca lupa total, peta dulu, wajib nanya) |
 | 07-tambahan-ai | ANTRI | bahan tambahan dari digest: peta penyakit disposisi, ekonomi kesalahan, gema vs pijakan |
@@ -83,5 +83,6 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-08-12 — bonus bab 04 diperluas dari 2 file jadi satu laci utuh (ketok pemilik: index tanpa detail bikin bingung pembaca); satu penyamaran dilakukan: nama produk internal → "kasir", sesuai segel; penulis: Claude (Anthropic).
 - 2026-08-12 — aturan bonus karya asli ditambahkan; status bab 04 jadi KELAR; penulis: Claude (Anthropic).
 - 2026-08-12 — konstitusi penggarap lahir, setelah kena colok pemilik: kitab anti-amnesia wajib produksinya juga amnesia-proof. Ditulis oleh Claude (Anthropic) — model yang dipilih: Claude Fable 5; catatan jujur: label model adalah pilihan di antarmuka, bukan kesaksian mesin yang menjawab.

@@ -1,5 +1,3 @@
-> **Bonus karya — salinan asli dari lumbung.** File ini di-copy apa adanya (plek-ketiplek) dari basis pengetahuan privat pemiliknya, atas izin pemilik, sebagai contoh hidup penerapan bab ini. Tautan internal di dalamnya menunjuk file yang tetap tinggal di lumbung dan sengaja tidak disertakan. Nol sensor diperlukan — sudah dipindai, tidak ada kredensial atau entitas sensitif.
-
 # MOL — AI Tuning
 
 Status: 8/17 selesai
