@@ -8,7 +8,13 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - **Catatan boleh mentah, asal gak nyamar mateng.** → `01-hukum-lumbung/kasta-catetan.md`
 - **Lumbung yang ribet itu lumbung yang bakal kosong.** → `01-hukum-lumbung/jangan-ribet-sampe-males.md`
 
+## 02 — Primbon Bekas Luka
+- **Luka yang gak dicatet bakal nagih dua kali.** → `02-primbon-bekas-luka/luka-wajib-dicatet.md`
+- **Warisan paling mahal itu bekas benjol, bukan SOP.** → `02-primbon-bekas-luka/arsip-luka-bacaan-wajib-pendatang.md`
+- **Tanggal itu keterangan saksi, bukan tanggal kedaluwarsa.** → `02-primbon-bekas-luka/luka-bertanggal-bukan-basi.md`
+
 *(Bab lain nyusul seiring lahirnya.)*
 
 ## Riwayat
 - 2026-08-12 — indeks lahir bareng bab 01.
+- 2026-08-12 — mantra bab 02 masuk.
