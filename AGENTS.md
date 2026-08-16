@@ -46,6 +46,7 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 - Satu bab = satu setoran = satu commit. Pesan commit: `[primbon/XX] ringkasan` + badan berisi ALASAN, bukan cuma daftar file.
 - Tiap bab baru lahir → WAJIB update `09-lampiran/mantra-mantra.md` di commit yang sama.
 - Tiap penggarap mencatat dirinya jujur di commit (nama/model yang dipilih; ingat: label mesin = pilihan, bukan kesaksian).
+- Bonus karya / salinan dari lumbung: pindaian sensor WAJIB NOL sebelum push — urutannya gak bisa dibalik. (Luka nyata: satu varian nama proyek pernah lolos dan sempat ke-push; untung repo masih private. Kalau itu kredensial, telat semenit = game over.)
 - Ambigu? TANYA pemilik. Jangan menebak lalu mengeksekusi — bertanya itu gratis, bongkar ulang itu mahal.
 - Keputusan produksi (bab masuk/dirombak/dipensiun) cuma sah dari pemilik. Penggarap mengusulkan, pemilik mengetok.
 
@@ -69,6 +70,15 @@ Slot 05–08 penomoran sengaja longgar — keluarga penyakit baru boleh lahir, l
 
 Salinan plek-ketiplek dari lumbung boleh masuk kitab sebagai contoh hidup, HANYA dengan syarat: (1) izin eksplisit pemilik per file, (2) dipindai dulu — kredensial & entitas yang bisa menyeret pemilik wajib disensor/disamarkan, (3) diberi header yang jelas bahwa itu salinan asli + keterangan tautan internal yang tidak ikut. Bonus karya melengkapi entri primbon, tidak menggantikannya.
 
+## CHECKPOINT — posisi terakhir (2026-08-12)
+
+Garapan dicukupkan di sini atas ketok pemilik; lanjut minggu berikutnya. Penggarap berikutnya (siapa pun kamu) mulai dari sini:
+
+1. **Kelar & udah di main:** README, 00, 01 (4 entri), 02 (3 entri), 03 (2 entri + bonus laci ADR 17 dokumen), 04 (2 entri + bonus laci belajar utuh 23 file). 12 commit.
+2. **Antrian, urut:** bab 05-primbon-kamus (bahan: kamus-istilah udah ada di bonus bab 04) → bab 06-primbon-mesin-amnesia (bahan: direktif kerja lumbung — minta ke pemilik kalau gak pegang) → bab 07-tambahan-ai (bahan: digest sesi, statusnya bumbu — minta ke pemilik) → 09-lampiran/kamus.md (istilah kitab sendiri).
+3. **Review pemilik:** bab 00–02 udah dicek pemilik; bab 03, 04, dan kedua bonus BELUM direview — jangan anggap final, siap-siap ralat.
+4. **Setelah semua bab:** review menyeluruh pemilik → keputusan pemilik soal buka repo ke publik → baru urusan corong (turunan).
+
 ## Cara nulis Riwayat — buat penerus, jangan asal coret
 
 Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated file". Aturannya:
@@ -83,6 +93,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-08-12 — CHECKPOINT dibuat (garapan dicukupkan atas ketok pemilik) + aturan sensor-NOL-sebelum-push masuk adat kerja dari luka adr-001; penulis: Claude (Anthropic).
 - 2026-08-12 — bonus bab 03 ditambahkan: laci ADR utuh (17 dokumen) atas ketok pemilik; penyamaran: nama proyek → Chatbot Kasir, nama pemilik → "pemilik"; penulis: Claude (Anthropic).
 - 2026-08-12 — bonus bab 04 diperluas dari 2 file jadi satu laci utuh (ketok pemilik: index tanpa detail bikin bingung pembaca); satu penyamaran dilakukan: nama produk internal → "kasir", sesuai segel; penulis: Claude (Anthropic).
 - 2026-08-12 — aturan bonus karya asli ditambahkan; status bab 04 jadi KELAR; penulis: Claude (Anthropic).
