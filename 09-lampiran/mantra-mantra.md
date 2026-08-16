@@ -17,9 +17,14 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - **Keputusan tanpa alasan tertulis bakal diputus ulang.** → `03-primbon-keputusan/keputusan-dicatet-lengkap.md`
 - **Keputusan yang gak bisa nolak saran itu cuma kenangan.** → `03-primbon-keputusan/pushback-keputusan-jadi-kekebalan.md`
 
+## 04 — Primbon Belajar
+- **Nomor cuma buat yang udah dijalanin.** → `04-primbon-belajar/peta-belajar-yang-jujur.md`
+- **Naik tangga cuma boleh bawa bukti mentok.** → `04-primbon-belajar/mulai-dari-layer-paling-ringan.md`
+
 *(Bab lain nyusul seiring lahirnya.)*
 
 ## Riwayat
 - 2026-08-12 — indeks lahir bareng bab 01.
 - 2026-08-12 — mantra bab 02 masuk.
 - 2026-08-12 — mantra bab 03 masuk.
+- 2026-08-12 — mantra bab 04 masuk.

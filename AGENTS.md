@@ -57,13 +57,17 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 | 01-hukum-lumbung (4 entri) | KELAR | prinsip operasional lumbung |
 | 02-primbon-bekas-luka (3 entri) | KELAR | format arsip luka lumbung |
 | 03-primbon-keputusan (2 entri) | KELAR | format catatan keputusan + seksi Push-back |
-| 04-primbon-belajar | ANTRI | peta belajar lumbung (nomor cuma buat yang dicentang; mulai dari layer paling ringan) |
+| 04-primbon-belajar (2 entri + 2 bonus karya asli) | KELAR | peta belajar lumbung |
 | 05-primbon-kamus | ANTRI | kamus lumbung (arti harfiah + analogi ber-namespace + riwayat revisi analogi) |
 | 06-primbon-mesin-amnesia | ANTRI | direktif kerja lumbung buat agen (nulis buat pembaca lupa total, peta dulu, wajib nanya) |
 | 07-tambahan-ai | ANTRI | bahan tambahan dari digest: peta penyakit disposisi, ekonomi kesalahan, gema vs pijakan |
 | 09-lampiran/kamus.md | ANTRI | istilah yang kepake di kitab, 3 kolom: istilah–arti–analogi |
 
 Slot 05–08 penomoran sengaja longgar — keluarga penyakit baru boleh lahir, lewat ketok pemilik.
+
+## Bonus karya asli
+
+Salinan plek-ketiplek dari lumbung boleh masuk kitab sebagai contoh hidup, HANYA dengan syarat: (1) izin eksplisit pemilik per file, (2) dipindai dulu — kredensial & entitas yang bisa menyeret pemilik wajib disensor/disamarkan, (3) diberi header yang jelas bahwa itu salinan asli + keterangan tautan internal yang tidak ikut. Bonus karya melengkapi entri primbon, tidak menggantikannya.
 
 ## Cara nulis Riwayat — buat penerus, jangan asal coret
 
@@ -79,4 +83,5 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-08-12 — aturan bonus karya asli ditambahkan; status bab 04 jadi KELAR; penulis: Claude (Anthropic).
 - 2026-08-12 — konstitusi penggarap lahir, setelah kena colok pemilik: kitab anti-amnesia wajib produksinya juga amnesia-proof. Ditulis oleh Claude (Anthropic) — model yang dipilih: Claude Fable 5; catatan jujur: label model adalah pilihan di antarmuka, bukan kesaksian mesin yang menjawab.
