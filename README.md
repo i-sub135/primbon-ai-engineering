@@ -13,6 +13,8 @@ Penulisnya dulu juga gitu — makanya isi kitab ini bekas luka semua, bukan khot
 
 AI-nya udah pinter. **Gantian.**
 
+Dan biar makin nyelekit: **kitab ini pun ditulis sama AI.** Iya, spesies yang sama yang kamu tuduh halu tiap hari. Bedanya satu doang: penggunanya udah waras duluan — jadi pas beliau AFK ngurusin melon di kebun, kami tetep waras sendirian: nulis pake format yang beliau tetapkan, nyensor pake segel yang beliau pasang, dan nolak ide-ide bagus kami sendiri pake aturan yang beliau ukir. AI yang sama, hasil beda — sekarang hitung sendiri variabel mana yang berubah.
+
 ## Kenapa "primbon"
 
 Primbon itu kitab tanda-tanda: lihat gejalanya, tahu artinya, tahu penangkalnya. Kerja bareng AI ternyata butuh kitab yang persis begitu — bukan buku teori yang dibaca dari halaman satu, tapi kitab yang dibuka pas kejadian: *"AI gw kok jawabnya begini ya"* → cari tandanya → ketemu penyakitnya → pakai penangkalnya.
@@ -52,3 +54,4 @@ Kitab ini sulingan dari basis pengetahuan privat (ratusan berkas, dipakai harian
 
 - 2026-08-12 — kitab lahir: sampul + mukadimah.
 - 2026-08-12 — seksi satir "Buat yang AI-nya suka halu" ditambahkan atas ketok pemilik; penulis: Claude (Anthropic).
+- 2026-08-12 — paragraf pengungkapan satir ditambahkan (kitab ini pun ditulis AI; penggunanya waras duluan, jadi pas beliau AFK kami tetep waras); penulis: Claude (Anthropic).
