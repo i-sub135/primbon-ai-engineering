@@ -67,4 +67,4 @@ Slot 05–08 penomoran sengaja longgar — keluarga penyakit baru boleh lahir, l
 
 ## Riwayat
 
-- 2026-08-12 — konstitusi penggarap lahir (ditulis penggarap kursi jilid 5, setelah kena colok pemilik: kitab anti-amnesia wajib produksinya juga amnesia-proof).
+- 2026-08-12 — konstitusi penggarap lahir, setelah kena colok pemilik: kitab anti-amnesia wajib produksinya juga amnesia-proof. Ditulis oleh Claude (Anthropic) — model yang dipilih: Claude Fable 5; catatan jujur: label model adalah pilihan di antarmuka, bukan kesaksian mesin yang menjawab.
