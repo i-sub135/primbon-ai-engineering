@@ -21,6 +21,11 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - **Nomor cuma buat yang udah dijalanin.** → `04-primbon-belajar/peta-belajar-yang-jujur.md`
 - **Naik tangga cuma boleh bawa bukti mentok.** → `04-primbon-belajar/mulai-dari-layer-paling-ringan.md`
 
+## 05 — Primbon Kamus
+- **Kata yang gak bisa lu artiin, belum boleh lu pake.** → `05-primbon-kamus/arti-harfiah-wajib.md`
+- **Satu analogi, satu konsep — analogi juga bisa bentrok.** → `05-primbon-kamus/analogi-punya-namespace.md`
+- **Bahasa warung sah, asal ada kamusnya.** → `05-primbon-kamus/bahasa-warung-sah-asal-ada-kamusnya.md`
+
 *(Bab lain nyusul seiring lahirnya.)*
 
 ## Riwayat
@@ -28,3 +33,4 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - 2026-08-12 — mantra bab 02 masuk.
 - 2026-08-12 — mantra bab 03 masuk.
 - 2026-08-12 — mantra bab 04 masuk.
+- 2026-08-31 — mantra bab 05 masuk; penulis: Claude (Anthropic).

@@ -59,7 +59,7 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 | 02-primbon-bekas-luka (3 entri) | KELAR | format arsip luka lumbung |
 | 03-primbon-keputusan (2 entri + bonus: laci ADR utuh, 17 dokumen) | KELAR | format catatan keputusan + seksi Push-back |
 | 04-primbon-belajar (2 entri + bonus: 1 laci belajar utuh dari lumbung, 22 file) | KELAR | peta belajar lumbung |
-| 05-primbon-kamus | ANTRI | kamus lumbung (arti harfiah + analogi ber-namespace + riwayat revisi analogi) |
+| 05-primbon-kamus (3 entri) | KELAR | kamus lumbung + kosakata personal |
 | 06-primbon-mesin-amnesia | ANTRI | direktif kerja lumbung buat agen (nulis buat pembaca lupa total, peta dulu, wajib nanya) |
 | 07-tambahan-ai | ANTRI | bahan tambahan dari digest: peta penyakit disposisi, ekonomi kesalahan, gema vs pijakan |
 | 09-lampiran/kamus.md | ANTRI | istilah yang kepake di kitab, 3 kolom: istilah–arti–analogi |
@@ -74,8 +74,8 @@ Salinan plek-ketiplek dari lumbung boleh masuk kitab sebagai contoh hidup, HANYA
 
 Garapan dicukupkan di sini atas ketok pemilik; lanjut minggu berikutnya. Penggarap berikutnya (siapa pun kamu) mulai dari sini:
 
-1. **Kelar & udah di main:** README, 00, 01 (4 entri), 02 (3 entri), 03 (2 entri + bonus laci ADR 17 dokumen), 04 (2 entri + bonus laci belajar utuh 23 file). 12 commit.
-2. **Antrian, urut:** bab 05-primbon-kamus (bahan: kamus-istilah udah ada di bonus bab 04) → bab 06-primbon-mesin-amnesia (bahan: direktif kerja lumbung — minta ke pemilik kalau gak pegang) → bab 07-tambahan-ai (bahan: digest sesi, statusnya bumbu — minta ke pemilik) → 09-lampiran/kamus.md (istilah kitab sendiri).
+1. **Kelar & udah di main:** README, 00, 01 (4 entri), 02 (3 entri), 03 (2 entri + bonus laci ADR 17 dokumen), 04 (2 entri + bonus laci belajar utuh 23 file), 05 (3 entri, 2026-08-31).
+2. **Antrian, urut:** bab 06-primbon-mesin-amnesia (bahan: direktif kerja lumbung — minta ke pemilik kalau gak pegang) → bab 07-tambahan-ai (bahan: digest sesi, statusnya bumbu — minta ke pemilik) → 09-lampiran/kamus.md (istilah kitab sendiri).
 3. **Review pemilik:** bab 00–02 udah dicek pemilik; bab 03, 04, dan kedua bonus BELUM direview — jangan anggap final, siap-siap ralat.
 4. **Peta lumbung yang BELUM disuling** — bahan diskusi pemilik minggu depan, jangan dieksekusi sebelum diketok:
    - `07-WORKFLOWS` (alur kerja git dkk) — generik, kandidat suling/bonus; belum disisir dalam.
@@ -100,6 +100,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-08-31 — bab 05 kelar (3 entri: arti harfiah + singkatan, analogi ber-namespace, bahasa warung berkamus); status & antrian checkpoint diperbarui; penulis: Claude (Anthropic).
 - 2026-08-12 — peta lumbung belum-tersuling ditambahkan ke checkpoint (bahan diskusi pemilik minggu depan); penulis: Claude (Anthropic).
 - 2026-08-12 — CHECKPOINT dibuat (garapan dicukupkan atas ketok pemilik) + aturan sensor-NOL-sebelum-push masuk adat kerja dari luka adr-001; penulis: Claude (Anthropic).
 - 2026-08-12 — bonus bab 03 ditambahkan: laci ADR utuh (17 dokumen) atas ketok pemilik; penyamaran: nama proyek → Chatbot Kasir, nama pemilik → "pemilik"; penulis: Claude (Anthropic).
