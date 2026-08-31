@@ -31,7 +31,10 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - **Peta dulu, laci belakangan.** → `06-primbon-mesin-amnesia/peta-dulu-laci-belakangan.md`
 - **Serah terima ditulis sebelum lampu mati, bukan sesudah.** → `06-primbon-mesin-amnesia/serah-terima-sebelum-lampu-mati.md`
 
-*(Bab lain nyusul seiring lahirnya.)*
+## 07 — Tambahan AI (bahan tambahan)
+- **Penyakit gak mati, dia pindah lantai — kenali tangganya.** → `07-tambahan-ai/penyakit-pindah-lantai.md`
+- **Salah gratis, ngeles bayar.** → `07-tambahan-ai/salah-gratis-ngeles-bayar.md`
+- **Kesepakatan tanpa pijakan luar itu gema.** → `07-tambahan-ai/pijakan-di-luar-lingkaran.md`
 
 ## Riwayat
 - 2026-08-12 — indeks lahir bareng bab 01.
@@ -40,3 +43,4 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - 2026-08-12 — mantra bab 04 masuk.
 - 2026-08-31 — mantra bab 05 masuk; penulis: Claude (Anthropic).
 - 2026-08-31 — mantra bab 06 masuk; penulis: Claude (Anthropic).
+- 2026-08-31 — mantra bab 07 masuk — indeks lengkap untuk v1; penulis: Claude (Anthropic).
