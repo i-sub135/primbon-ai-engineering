@@ -38,9 +38,10 @@ Primbon itu kitab tanda-tanda: lihat gejalanya, tahu artinya, tahu penangkalnya.
 | `05-primbon-kamus/` | Cara ngelola istilah & analogi biar dua orang gak pakai satu kata buat dua barang |
 | `06-primbon-mesin-amnesia/` | Cara nulis buat pembaca yang selalu datang lupa total — manusia besok, atau mesin |
 | `07-tambahan-ai/` | Bahan tambahan: tanda-tanda penyakit di sisi mesinnya sendiri, dan ekonomi yang bikin mesin jujur |
+| `08-belum-lahir/` | Kursi kosong yang sengaja — README-nya nyebut kandidat pengisinya |
 | `09-lampiran/` | Kamus istilah kitab + indeks semua mantra |
 
-Slot `05`–`08` di penomoran sengaja longgar — kitab ini hidup, keluarga penyakit baru bakal lahir.
+Slot `08` sengaja dibiarkan kosong — kitab ini hidup, keluarga penyakit baru bakal lahir di situ.
 
 ## Sumber & segel
 

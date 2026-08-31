@@ -62,6 +62,7 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 | 05-primbon-kamus (3 entri) | KELAR | kamus lumbung + kosakata personal |
 | 06-primbon-mesin-amnesia (3 entri) | KELAR | direktif kerja lumbung buat agen + pola serah-terima |
 | 07-tambahan-ai (3 entri) | KELAR | bahan tambahan: penyakit pindah lantai, ekonomi kesalahan, pijakan luar |
+| 08-belum-lahir | KURSI KOSONG (sengaja) | README berisi kandidat pengisi: alur kerja, template, prompt-kalau-lolos-sisir |
 | 09-lampiran/kamus.md (32 istilah) | KELAR | istilah kitab, 3 kolom |
 
 Slot 05–08 penomoran sengaja longgar — keluarga penyakit baru boleh lahir, lewat ketok pemilik.
@@ -97,6 +98,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-08-31 — folder 08-belum-lahir dibuat resmi sebagai kursi kosong ber-README (ketok pemilik); penulis: Claude (Anthropic).
 - 2026-08-31 — v1 TAMAT: bab 07 (3 entri tambahan AI) + lampiran kamus (32 istilah) kelar; checkpoint ditulis ulang buat fase pasca-tamat; penulis: Claude (Anthropic).
 - 2026-08-31 — bab 06 kelar (3 entri: nulis buat pembaca lupa, peta dulu laci belakangan, serah terima sebelum lampu mati + aturan wajib nanya); penulis: Claude (Anthropic).
 - 2026-08-31 — bab 05 kelar (3 entri: arti harfiah + singkatan, analogi ber-namespace, bahasa warung berkamus); status & antrian checkpoint diperbarui; penulis: Claude (Anthropic).
