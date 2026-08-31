@@ -61,8 +61,8 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 | 04-primbon-belajar (2 entri + bonus: 1 laci belajar utuh dari lumbung, 22 file) | KELAR | peta belajar lumbung |
 | 05-primbon-kamus (3 entri) | KELAR | kamus lumbung + kosakata personal |
 | 06-primbon-mesin-amnesia (3 entri) | KELAR | direktif kerja lumbung buat agen + pola serah-terima |
-| 07-tambahan-ai | ANTRI | bahan tambahan dari digest: peta penyakit disposisi, ekonomi kesalahan, gema vs pijakan |
-| 09-lampiran/kamus.md | ANTRI | istilah yang kepake di kitab, 3 kolom: istilah–arti–analogi |
+| 07-tambahan-ai (3 entri) | KELAR | bahan tambahan: penyakit pindah lantai, ekonomi kesalahan, pijakan luar |
+| 09-lampiran/kamus.md (32 istilah) | KELAR | istilah kitab, 3 kolom |
 
 Slot 05–08 penomoran sengaja longgar — keluarga penyakit baru boleh lahir, lewat ketok pemilik.
 
@@ -70,21 +70,18 @@ Slot 05–08 penomoran sengaja longgar — keluarga penyakit baru boleh lahir, l
 
 Salinan plek-ketiplek dari lumbung boleh masuk kitab sebagai contoh hidup, HANYA dengan syarat: (1) izin eksplisit pemilik per file, (2) dipindai dulu — kredensial & entitas yang bisa menyeret pemilik wajib disensor/disamarkan, (3) diberi header yang jelas bahwa itu salinan asli + keterangan tautan internal yang tidak ikut. Bonus karya melengkapi entri primbon, tidak menggantikannya.
 
-## CHECKPOINT — posisi terakhir (2026-08-12)
+## CHECKPOINT — v1 TAMAT (2026-08-31)
 
-Garapan dicukupkan di sini atas ketok pemilik; lanjut minggu berikutnya. Penggarap berikutnya (siapa pun kamu) mulai dari sini:
+Semua ruangan v1 terisi: README + 00–07 + lampiran (mantra-mantra 20 mantra, kamus 32 istilah), plus dua bonus karya asli (laci ADR & laci belajar). Penggarap berikutnya (siapa pun kamu) mulai dari sini:
 
-1. **Kelar & udah di main:** README, 00, 01 (4 entri), 02 (3 entri), 03 (2 entri + bonus laci ADR 17 dokumen), 04 (2 entri + bonus laci belajar utuh 23 file), 05 (3 entri), 06 (3 entri) — 2026-08-31.
-2. **Antrian, urut:** bab 07-tambahan-ai (bahan: digest sesi, statusnya bumbu — minta ke pemilik) → 09-lampiran/kamus.md (istilah kitab sendiri).
-3. **Review pemilik:** bab 00–02 udah dicek pemilik; bab 03, 04, dan kedua bonus BELUM direview — jangan anggap final, siap-siap ralat.
-4. **Peta lumbung yang BELUM disuling** — bahan diskusi pemilik minggu depan, jangan dieksekusi sebelum diketok:
+1. **Review pemilik** — bab 03–07, kedua bonus, dan lampiran BELUM direview pemilik (bab 00–02 sudah). Jangan anggap final; siap-siap ralat lewat Riwayat.
+2. **Kandidat lumbung yang belum disuling** — bahan diskusi pemilik, jangan dieksekusi sebelum diketok:
    - `07-WORKFLOWS` (alur kerja git dkk) — generik, kandidat suling/bonus; belum disisir dalam.
    - `templates/` — kandidat bonus karya paling murah: format catatan siap comot pembaca.
-   - `08-GLOSSARY` (kosakata personal) — digabung ke bahan bab 05 kamus.
-   - Pola handoff di `10-AI-CONTEXT` + `01-MOC` — POLA-nya buat bab 06 mesin-amnesia (isinya dapur, polanya halal).
+   - `08-GLOSSARY` — sudah disuling ke bab 05 (kosakata & sinyal mode); bonus salinannya belum, kalau pemilik mau.
    - `06-PROMPTS` — WAJIB disisir dulu: kadar dapurnya belum ketahuan.
    - SENGAJA TIDAK disuling (keputusan, bukan kelalaian): `03-ARCHITECTURE` (dapur murni + pola nempel kasus), isi dalam `02-PROJECTS` (segel, cuma pitfalls yang keluar), `05-BRAINSTORMING`/`00-INBOX`/`11-TO-DO` (kasta rendah + state operasional).
-5. **Setelah semua bab:** review menyeluruh pemilik → keputusan pemilik soal buka repo ke publik → baru urusan corong (turunan).
+3. **Setelah review:** keputusan pemilik soal versi/rilis → baru urusan corong (turunan).
 
 ## Cara nulis Riwayat — buat penerus, jangan asal coret
 
@@ -100,6 +97,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-08-31 — v1 TAMAT: bab 07 (3 entri tambahan AI) + lampiran kamus (32 istilah) kelar; checkpoint ditulis ulang buat fase pasca-tamat; penulis: Claude (Anthropic).
 - 2026-08-31 — bab 06 kelar (3 entri: nulis buat pembaca lupa, peta dulu laci belakangan, serah terima sebelum lampu mati + aturan wajib nanya); penulis: Claude (Anthropic).
 - 2026-08-31 — bab 05 kelar (3 entri: arti harfiah + singkatan, analogi ber-namespace, bahasa warung berkamus); status & antrian checkpoint diperbarui; penulis: Claude (Anthropic).
 - 2026-08-12 — peta lumbung belum-tersuling ditambahkan ke checkpoint (bahan diskusi pemilik minggu depan); penulis: Claude (Anthropic).

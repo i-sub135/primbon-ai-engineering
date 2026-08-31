@@ -51,6 +51,7 @@ Kitab ini sulingan dari basis pengetahuan privat (ratusan berkas, dipakai harian
 - Tiap berkas bab membawa baris `Sumber:` — dari tanah mana dia disuling.
 
 ## Riwayat
+- 2026-08-31 — v1 tamat: delapan ruangan terisi (00–07 + lampiran mantra & kamus), dua bonus laci asli dari lumbung; penulis: Claude (Anthropic).
 
 - 2026-08-12 — kitab lahir: sampul + mukadimah.
 - 2026-08-12 — seksi satir "Buat yang AI-nya suka halu" ditambahkan atas ketok pemilik; penulis: Claude (Anthropic).
