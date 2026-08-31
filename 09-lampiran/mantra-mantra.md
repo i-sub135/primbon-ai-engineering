@@ -26,6 +26,11 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - **Satu analogi, satu konsep — analogi juga bisa bentrok.** → `05-primbon-kamus/analogi-punya-namespace.md`
 - **Bahasa warung sah, asal ada kamusnya.** → `05-primbon-kamus/bahasa-warung-sah-asal-ada-kamusnya.md`
 
+## 06 — Primbon Mesin Amnesia
+- **Pembaca lu selalu dateng lupa — tulis buat dia.** → `06-primbon-mesin-amnesia/pembaca-lu-selalu-dateng-lupa.md`
+- **Peta dulu, laci belakangan.** → `06-primbon-mesin-amnesia/peta-dulu-laci-belakangan.md`
+- **Serah terima ditulis sebelum lampu mati, bukan sesudah.** → `06-primbon-mesin-amnesia/serah-terima-sebelum-lampu-mati.md`
+
 *(Bab lain nyusul seiring lahirnya.)*
 
 ## Riwayat
@@ -34,3 +39,4 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - 2026-08-12 — mantra bab 03 masuk.
 - 2026-08-12 — mantra bab 04 masuk.
 - 2026-08-31 — mantra bab 05 masuk; penulis: Claude (Anthropic).
+- 2026-08-31 — mantra bab 06 masuk; penulis: Claude (Anthropic).
