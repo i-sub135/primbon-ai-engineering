@@ -234,7 +234,7 @@ YAML   [YAML Ain't Markup Language — format teks pakai indentasi, bukan tanda 
        - salah spasi = rusak, dan tidak langsung terasa
 ```
 
-**Dipilih JSONL** (keputusan Iyan): sudah familiar, mudah di-update, dan ramah script generator.
+**Dipilih JSONL** (keputusan pemilik): sudah familiar, mudah di-update, dan ramah script generator.
 
 Dua keuntungan tambahan:
 
@@ -444,8 +444,8 @@ Jangan menambahkan contoh code ke dua bagian pertama tanpa alasan baru yang jela
 
 ## Riwayat
 
-- 2026-08-07 — dibuat: definisi, kasus satu-kata-dua-makna (contoh POS punya Iyan), aturan tulis-sebelum-tes, pilihan patokan file+heading, validasi GT sebelum ngukur (diskusi R&D)
-- 2026-08-07 — ditambah: section Rumus (satu tempat, jadi sumber tunggal); contoh code dipisah ke [ground-truth-code.md](ground-truth-code.md) atas usul Iyan (konsep = mikir, code = kebayang); ditambah alasan kenapa konsep & cara-set sengaja tanpa code
-- 2026-08-07 — ditambah: cara gunain — 5 langkah alur, contoh hitung per baris (k=5), rata-rata lintas baris, baris jebakan dipisah dari rata-rata, laporan tiga angka; key point jadi 15 poin. Dokumen ini menutup keempat pertanyaan awal Iyan (di mana / apa itu / cara set / cara gunain)
-- 2026-08-07 — ditambah: format file — empat field (tanya/patokan/jenis/catatan), wadah JSONL atas keputusan Iyan (familiar + ramah script generator + ramah git), aturan `patokan` selalu daftar; key point jadi 12 poin
+- 2026-08-07 — dibuat: definisi, kasus satu-kata-dua-makna (contoh POS punya pemilik), aturan tulis-sebelum-tes, pilihan patokan file+heading, validasi GT sebelum ngukur (diskusi R&D)
+- 2026-08-07 — ditambah: section Rumus (satu tempat, jadi sumber tunggal); contoh code dipisah ke [ground-truth-code.md](ground-truth-code.md) atas usul pemilik (konsep = mikir, code = kebayang); ditambah alasan kenapa konsep & cara-set sengaja tanpa code
+- 2026-08-07 — ditambah: cara gunain — 5 langkah alur, contoh hitung per baris (k=5), rata-rata lintas baris, baris jebakan dipisah dari rata-rata, laporan tiga angka; key point jadi 15 poin. Dokumen ini menutup keempat pertanyaan awal pemilik (di mana / apa itu / cara set / cara gunain)
+- 2026-08-07 — ditambah: format file — empat field (tanya/patokan/jenis/catatan), wadah JSONL atas keputusan pemilik (familiar + ramah script generator + ramah git), aturan `patokan` selalu daftar; key point jadi 12 poin
 - 2026-08-07 — ditambah: sumber pertanyaan A vs B + jebakan nyontek frasa chunk, ground truth boleh kosong (pertanyaan jebakan) dan cara nilainya yang beda, jumlah & komposisi & sebaran; plus section Key Point (diskusi R&D)

@@ -38,7 +38,7 @@ kepanjangannya disebut sekali. Singkatan tanpa definisi = istilah asing tanpa ar
 | Retrieval | Proses ngambil chunk yang paling mirip dengan query | Nyari-nyari di gudang |
 | Ranking | Hasil diurutkan dari paling mirip ke paling gak mirip | Daftar juara 1, 2, 3 |
 | Distance | Angka jarak antar-vector. Makin kecil makin mirip | Jarak tempat duduk. Deket = semakna |
-| Top-k / k | Berapa potongan teratas yang diambil | Isi keranjang. `k=10` artinya angkut 10 |
+| Top-k / k | Berapa potongan teratas yang diambil | Isi keranjang (`k=10` artinya angkut 10). Kalau lagi bahas urutan, pakai **panjang etalase dadakan** mpok Ipeh — disusun ulang tiap pembeli dateng, yang paling mirip catetan dipajang paling depan. Keranjang gak nyimpen urutan, etalase nyimpen |
 | Noise | Isi keranjang yang kebawa tapi gak nyambung | Sampah yang keangkut bareng barang |
 | Prompt augmentation | Chunk hasil retrieval disisipkan ke prompt sebelum dikirim ke model | Nyelipin catatan contekan ke soal ujian |
 | Context | Bahan yang dikasih ke model untuk menjawab | Contekan yang boleh dibaca |
@@ -54,8 +54,13 @@ kepanjangannya disebut sekali. Singkatan tanpa definisi = istilah asing tanpa ar
 | Gold questions | Sekumpulan pertanyaan yang jawaban benarnya sudah kita patok | Soal ujian yang kunci jawabannya udah dipegang |
 | recall@k | Potongan guna yang kebawa dibagi semua yang seharusnya kebawa | Di kampung Bojong Kenyot ada Samsul kagak — dari semua Samsul yang harusnya ketemu, berapa yang ketemu |
 | precision@k | Potongan guna yang kebawa dibagi k | Berapa Samsul dari total penduduk yang diangkut. Gak peduli blok berapa gang mana |
-| MRR | Mean Reciprocal Rank — rata-rata kebalikan peringkat jawaban pertama yang benar | Nilai yang peduli jawaban benar nongol di juara 1 atau juara 9 |
-| NDCG | Normalized Discounted Cumulative Gain — nilai ranking, makin bawah makin kecil bobotnya | Sama kayak MRR tapi ngitung semua yang bener, bukan cuma yang pertama |
+| Titik siku (knee point) | Titik di kurva recall-vs-k tempat kenaikan mulai landai. Dipakai buat milih k: ambil k terkecil yang udah nyampe situ | Tanjakan yang mulai datar. Gas diinjek lebih dalem, kecepatan nambahnya udah gak sepadan Di laporan tukang sensus: baris terakhir yang recall-nya masih naik (5→10 naik, 10→20 diem → siku di 10) |
+| Kurva recall-vs-k | Laporan recall@k di beberapa nilai k sekaligus, buat lihat masih naik atau udah rata | Tukang sensus yang gak turun lapangan — gak bisa ngintip kampung, cuma megang laporan per lebar keranjang. Bacanya dari atas ke bawah: naik = masih ada yang kepotong, diem = plateau |
+| Plateau (recall) | Recall berhenti naik walau k terus digedein — potongan sisanya memang tidak pernah muncul di ranking | Mpok Ipeh emang gak nyetok garem. Etalase dipanjangin berapapun, garem gak bakal nongol. Obatnya nyetok ulang warung, bukan manjangin etalase Versi Bojong Kenyot: Tarno gak tinggal di kampung itu — k=1 juta juga gak nemu |
+| Asimetri recall–precision ⏸ BELUM DIAJARIN (ditunda 2026-09-01, nunggu rerank) | Potongan yang tidak terambil tidak bisa diselamatkan tahap sesudahnya; sampah yang terambil masih bisa dibuang. Makanya k dipilih untuk mengejar recall | Jaring tebar: sampah yang naik ke perahu masih bisa disortir, ikan yang lolos udah renang balik ke laut |
+| Reciprocal Rank (RR) | Kebalikan peringkat: `1 / posisi jawaban benar pertama`, 0 kalau gak nongol di etalase. Level per-pertanyaan, bebas dari k | Satu kedatangan Juned: barang pertama yang cocok ada di pajangan ke berapa. Paling depan 1.00, ke-8 0.125, gak ada 0. Dipilih 1/posisi (bukan k+1−posisi) karena gak ikut berubah pas etalase dipanjangin |
+| MRR | Mean Reciprocal Rank — rata-rata RR semua pertanyaan, dihitung di dalam etalase k | **Rapor mingguan mpok Ipeh dari POV PEMODAL** (bukan emak): rata-rata seberapa depan dia majang barang yang bener. Emak ngurusin dapet-kagak (recall/precision), pemodal ngurusin susunan (RR/MRR). Kunci POV ini punya pemilik 2026-09-01. (Versi lama "juara 1 vs 9" — jangan dipakai) |
+| NDCG | Normalized Discounted Cumulative Gain — nilai ranking: semua jawaban bener dihitung, relevansi boleh bertingkat, makin bawah bobotnya makin kecil, dibagi skor susunan ideal. **Belum diajarin** | Sama kayak MRR tapi ngitung semua yang bener, bukan cuma yang pertama. (Analogi patokan belum ada — nunggu pemilik bikin sendiri pas sesi) |
 
 ## RAG — Lanjutan
 
@@ -108,4 +113,9 @@ kepanjangannya disebut sekali. Singkatan tanpa definisi = istilah asing tanpa ar
 
 - 2026-08-07 — dibuat: istilah RAG (pipeline, pencarian, eval, lanjutan), AI tuning, dan umum
 - 2026-08-07 — aturan singkatan ditambahkan (ditulis `Nama panjang (SINGKATAN)`, dilarang dipakai sebelum kepanjangannya disebut); entri Ground truth diberi bentuk pendek `(GT)`
+- 2026-08-29 — ditambah entri `Reciprocal Rank (RR)` sebagai level per-pertanyaan dari MRR, saat sesi metrik urutan
+- 2026-08-29 — ditambah 3 istilah eval: Titik siku (knee point), Plateau (recall), Asimetri recall–precision. Analogi `Top-k / k` diperluas: keranjang tetap dipakai, plus etalase dadakan mpok Ipeh buat konteks yang nyangkut urutan. Frame Juned & warung mpok Ipeh nyambung ke entri Vector store yang analoginya emang udah "gudang" — jadi gudang = index, etalase = k
 - 2026-08-07 — revisi analogi Embedding & Hash: sebelumnya dua-duanya pakai "sidik jari" sehingga bentrok satu sama lain. Embedding jadi GPS makna supaya sekeluarga dengan Vector (koordinat) & Distance (jarak); Hash jadi nomor cetakan buku supaya arahnya benar (isi berubah → kode berubah) dan tidak menyerempet KTP yang sudah dipakai Metadata
+- 2026-09-01 — review: analogi MRR diselarasin ke frame etalase Juned biar satu keluarga sama RR (versi "juara" ditinggal, frame peringkat kebukti gelap di pemilik 2026-08-29); entri NDCG ditegasin belum diajarin + arti ditambah relevansi bertingkat
+- 2026-09-01 — cara milih k diulang: ditambah "Kurva recall-vs-k" (analogi pemilik: tukang sensus gak turun lapangan); Titik siku & Plateau dapet versi Bojong Kenyot (Tarno); Asimetri ditandai BELUM DIAJARIN (ditunda sampai rerank)
+- 2026-09-01 — MRR diulang & ketutup: analogi RR/MRR ditulis ulang pakai POV emak vs pemodal (temuan pemilik: bingung karena gak tau berdiri sebagai siapa). RR ditegasin bebas k, gak nongol = 0

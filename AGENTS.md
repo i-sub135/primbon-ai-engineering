@@ -57,8 +57,8 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 | README + 00-mukadimah | KELAR | — |
 | 01-hukum-lumbung (4 entri) | KELAR | prinsip operasional lumbung |
 | 02-primbon-bekas-luka (3 entri) | KELAR | format arsip luka lumbung |
-| 03-primbon-keputusan (2 entri + bonus: laci ADR utuh, 17 dokumen) | KELAR | format catatan keputusan + seksi Push-back |
-| 04-primbon-belajar (2 entri + bonus: 1 laci belajar utuh dari lumbung, 22 file) | KELAR | peta belajar lumbung |
+| 03-primbon-keputusan (2 entri + bonus: laci ADR utuh, 21 dokumen, sinkron 2026-09-10) | KELAR | format catatan keputusan + seksi Push-back |
+| 04-primbon-belajar (2 entri + bonus: 1 laci belajar utuh dari lumbung, 23 file, sinkron 2026-09-10) | KELAR | peta belajar lumbung |
 | 05-primbon-kamus (3 entri) | KELAR | kamus lumbung + kosakata personal |
 | 06-primbon-mesin-amnesia (3 entri) | KELAR | direktif kerja lumbung buat agen + pola serah-terima |
 | 07-tambahan-ai (3 entri) | KELAR | bahan tambahan: penyakit pindah lantai, ekonomi kesalahan, pijakan luar |
@@ -84,6 +84,10 @@ Semua ruangan v1 terisi: README + 00–07 + lampiran (mantra-mantra 20 mantra, k
    - SENGAJA TIDAK disuling (keputusan, bukan kelalaian): `03-ARCHITECTURE` (dapur murni + pola nempel kasus), isi dalam `02-PROJECTS` (segel, cuma pitfalls yang keluar), `05-BRAINSTORMING`/`00-INBOX`/`11-TO-DO` (kasta rendah + state operasional).
 3. **Setelah review:** keputusan pemilik soal versi/rilis → baru urusan corong (turunan).
 
+## Sinkron bonus dari lumbung
+
+Bonus karya adalah POTRET lumbung per tanggal — lumbung terus bergerak, potret tidak. Sinkron ulang dilakukan saat pemilik mengetok, dengan prosedur tetap: clone lumbung → salin laci utuh (README bonus dipertahankan) → penyamaran yang sama persis (proyek → Chatbot Kasir, pemilik → "pemilik", produk model → "kasir") → pindaian sensor WAJIB nol → catat tanggal & isi perubahan di Riwayat README bonus → baru push. Jangan sinkron sebagian; potret setengah lebih menyesatkan daripada potret lama.
+
 ## Cara nulis Riwayat — buat penerus, jangan asal coret
 
 Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated file". Aturannya:
@@ -98,6 +102,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-09-10 — dua laci bonus disinkronkan dari lumbung via git (ADR 17→21; belajar 22→23 file); prosedur sinkron dibakukan di seksi baru; penulis: Claude (Anthropic).
 - 2026-08-31 — folder 08-belum-lahir dibuat resmi sebagai kursi kosong ber-README (ketok pemilik); penulis: Claude (Anthropic).
 - 2026-08-31 — v1 TAMAT: bab 07 (3 entri tambahan AI) + lampiran kamus (32 istilah) kelar; checkpoint ditulis ulang buat fase pasca-tamat; penulis: Claude (Anthropic).
 - 2026-08-31 — bab 06 kelar (3 entri: nulis buat pembaca lupa, peta dulu laci belakangan, serah terima sebelum lampu mati + aturan wajib nanya); penulis: Claude (Anthropic).

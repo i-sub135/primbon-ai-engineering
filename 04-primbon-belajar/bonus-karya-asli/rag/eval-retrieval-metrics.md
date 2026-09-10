@@ -2,7 +2,9 @@
 
 > Keluarga **Eval formal 1/4 — konsep** di [MOL RAG](../mol-rag.md).
 > Saudaranya: [ground truth](ground-truth.md) (2/4, selesai), implementasi (3/4) dan
-> metrik sensitif urutan (4/4) — dua terakhir belum dikerjain.
+> [metrik sensitif urutan](eval-ranking-metrics.md) (4/4, separuh: MRR sudah, NDCG belum).
+> Bagian **"Cara Milih k"** (separuh dari 3/4) ikut nebeng di dokumen ini — rumah
+> konsepnya memang di sini. Separuh sisanya (nulis code penghitung) belum dikerjain.
 > Lanjutan dari testing 2 lapisan di [rag-key-takeaways.md](rag-key-takeaways.md) — bagian gold questions.
 > Menjawab: gimana tau retrieval bagus atau nggak pakai angka, bukan feeling.
 
@@ -38,6 +40,20 @@ hanya naik atau tetap. Jadi angka bagus tidak menjamin retrieval bagus.
 
 `precision@k` bergerak ke arah sebaliknya, jadi keduanya saling mengerem:
 "iya kebawa sih, tapi mengangkut 9 sampah untuk mendapat 1 barang."
+
+## Keypoint: Satu Tuas (k), Dua Arah Berlawanan
+
+```
+k DIGEDEIN  (truk digedein)  : recall seneng (naik/tetap) — precision nangis (turun)
+k DIKECILIN (truk dikecilin) : precision seneng           — recall terancam
+```
+
+- Recall **tidak pernah turun** kalau k naik — gedein truk itu senjatanya recall:
+  Samsul yang tadinya ketinggalan di pinggir jalan dapat peluang keangkut.
+- Precision arah umumnya turun kalau k naik: pembagi (isi truk) pasti nambah,
+  tambahan Samsul paling banter sisa yang belum keangkut.
+- Konsekuensi: **k saja tidak bisa menyenangkan dua-duanya.** Milih k bukan cari
+  angka cantik — cara milihnya dibahas di bagian implementasi (Eval formal 3/4).
 
 ## Contoh Mekanisme
 
@@ -97,11 +113,22 @@ Nongol sekali atau tiga kali nilainya sama. "Seberapa sering"-nya baru muncul di
 dari 20 gold question, berapa yang jawabannya kebawa. Sering-nya lintas pertanyaan,
 bukan di dalam satu hasil.
 
-**2. Precision buta urutan.**
+**2. Precision buta urutan — dan recall juga.**
 Jawaban di peringkat 1 atau peringkat 10, `precision@k` tetap sama — isi keranjang tidak berubah,
 hanya susunannya. Precision seperti menumpahkan keranjang ke meja lalu menghitung:
-berapa persen yang guna. Urutan memang penting dan memang punya metrik sendiri,
-tapi itu metrik ketiga (belum dipelajari), bukan precision.
+berapa persen yang guna. Urutan memang penting dan memang punya metrik sendiri —
+MRR (sudah, lihat [eval-ranking-metrics.md](eval-ranking-metrics.md)) dan NDCG (belum) — bukan precision.
+
+Jangan salah kira recall lebih peka: dua-duanya sama butanya.
+
+```
+keranjang A: [ GOLD, GOLD, x, x, x, x, x, x, x, x ]   ← jawaban di slot 1-2
+keranjang B: [ x, x, x, x, x, x, x, x, GOLD, GOLD ]   ← jawaban di slot 9-10
+
+recall    A = B        precision A = B        ← identik. dua metrik ini gak bisa bedain.
+```
+
+Padahal A jelas lebih bagus. Yang bisa membedakan A dan B baru muncul di MRR / NDCG.
 
 **3. Penyebut precision = keranjang hasil (k), bukan seluruh database.**
 Kalau mengangkut 10 chunk, penyebutnya 10 — bukan jumlah total chunk yang diindeks.
@@ -127,7 +154,97 @@ Lihat [chunking-overlap.md](chunking-overlap.md) → "Dua penyakit yang sering t
 Jadi dua metrik ini juga berfungsi sebagai alat ukur untuk keputusan chunking/overlap,
 bukan cuma laporan akhir.
 
-## Analogi Patokan (punya Iyan)
+## Cara Milih k
+
+> Diulang dari nol 2026-09-01 (versi 08-29 dinyatakan keracunan oleh pemilik — nyender ke
+> rerank/filter yang belum diajarin, contoh ambigu). Urutan di bawah = urutan yang
+> beneran jalan di kelas, pakai contoh buatan pemilik sendiri.
+
+Trade-off di atas cuma bilang "k gak bisa nyenengin dua-duanya". Bagian ini jawab:
+angkanya berapa, dan gimana tau dari laporan doang.
+
+### 1. Satu nama gak nongol — dua sebab, dua obat
+
+Contoh pemilik: GT = [Samsul, Udin, Tarno], keranjang k=20 isinya cuma [Samsul, Udin].
+
+```
+sebab #1  k kurang lebar        Tarno ada di kampung, kepotong di luar 20
+                                → obat: lebarin k
+sebab #2  Tarno gak di kampung  a. penggaris salah — GT nulis Tarno, dia di kampung lain
+                                b. kampungnya bolong — datanya gak pernah masuk
+                                   (gak di-ingest, kepotong chunking)
+                                → lebarin k = buang tenaga, mau k=1 juta juga gak nemu
+```
+
+### 2. Bedain #1 dan #2 tanpa turun ke lapangan: laporan beberapa k
+
+Analogi pemilik: **tukang sensus yang gak turun lapangan** — modalnya cuma laporan.
+Jadi minta laporan bukan satu k, tapi beberapa:
+
+```
+k=5    → recall 0.33   (Samsul)
+k=10   → recall 0.67   (Samsul, Udin)   ← kenaikan terakhir
+k=20   → recall 0.67
+k=50   → recall 0.67
+k=100  → recall 0.67                     ← dilebarin 10x, nol
+```
+
+- Angka masih naik → masih ada yang kepotong (sebab #1), lebarin lagi.
+- Angka diem walau k dilebarin berkali-kali → **plateau**. Sisanya kena sebab #2,
+  obatnya di hulu (chunking, embedding, ground truth), bukan di k.
+
+### 3. Aturan: k terkecil yang udah nyentuh plateau = titik siku
+
+Di laporan atas, kenaikan terakhir 5 → 10. Di 10 kurva nekuk → **titik siku** (knee point).
+k produksi = 10.
+
+### 4. Bantalan di atas siku boleh, tapi ada harganya
+
+pemilik milih 20 sebagai bantalan ("kalau-kalau"). Sah — kurva asli gak semulus contoh —
+asal tau bayarnya:
+
+```
+k=10 → k=20, recall tetep 0.67
+
+bayar 1  precision 2/10 → 2/20 = anjlok setengah
+         (10 slot tambahan keisi orang lain, bukan kosong)
+bayar 2  beban angkut: 20 orang harus dibawa & diperiksa yang baca keranjang
+         → token, waktu, biaya naik 2x buat recall yang sama
+```
+
+Kelewat 50–100 jelas rugi: bayar 5–10x, dapet nol.
+
+### 5. k itu garis potong, bukan kualitas mesin
+
+Menaikkan k **tidak membuat retrieval jadi lebih pintar** — rankingnya sama persis,
+yang berubah hanya sampai mana daftar itu dipotong.
+
+```
+k=5    Q: [ a  b  c  d  e ]                          ❌ patokan gak kebawa
+k=10   Q: [ a  b  c  d  e  f  g  GOLD  h  i ]        ✅ kebawa
+
+GOLD tetap di peringkat 8 di dua-duanya. Yang beda cuma panjang potongannya.
+```
+
+### 6. Beda level itungan (jebakan yang bikin pusing)
+
+```
+LEVEL 1 — per satu pertanyaan
+  patokan 1 nama   → recall 1 atau 0 (binary)
+  patokan 3 nama   → recall 2/3 dst — tetep "ada kagak", dihitung per nama
+  precision        → 0/k, 1/k, ...  gak pernah binary, pembaginya k
+
+LEVEL 2 — laporan
+  recall  = rata-rata dari semua kartu level 1
+```
+
+### Belum diajarin: kenapa recall dimenangin duluan (asimetri kerugian)
+
+Ditunda 2026-09-01. Alasannya butuh tahap **sortir sesudah retrieval** (rerank/filter)
+yang belum masuk MOL — tanpa itu penjelasannya lompat. Analogi jaring tebar disimpen
+di bawah buat nanti, jangan dipakai sebagai cue dulu.
+
+## Analogi Patokan (punya pemilik)
 
 ```
 recall@k    : di kampung Bojong Kenyot ada Samsul kagak
@@ -140,6 +257,37 @@ precision@k : berapa Samsul dari total penduduk yang diangkut
 
 Patok penting: **kampung Bojong Kenyot itu keranjang hasil, bukan seluruh dunia.**
 
+### Juned & Warung Mpok Ipeh — analogi untuk k dan plateau
+
+```
+catetan emak    = [kopi, garem, gula, kecap]   → ground truth (4 patokan)
+gudang mpok Ipeh = seluruh stok warung          → index. TETAP, bukan k
+etalase         = barang yang disodorin ke Juned → k (di contoh ini 10 barang)
+                  disusun ulang tiap Juned dateng, sesuai catetan yang dibawa
+                  yang paling mirip ditaro paling depan
+yang dapet      = [kopi, gula]                  → 2
+
+recall    = 2/4  = 0.50   ← pembagi: catetan emak
+precision = 2/10 = 0.20   ← pembagi: isi etalase
+```
+
+Dua patok yang gampang ketuker:
+
+- **k = panjang etalase, bukan kapasitas gudang.** Gudang boleh isi 10.000, k tetap 10.
+- **Plateau = "mpok Ipeh emang gak nyetok garem".** Mau etalase dipanjangin sampai
+  bongkar semua rak, garem tetap gak nongol. Obatnya nyetok ulang warung, bukan
+  manjangin etalase.
+
+### Jaring Tebar — analogi untuk asimetri (DISIMPEN, belum diajarin — lihat "Belum diajarin" di atas)
+
+```
+sampah kejaring, udah naik ke perahu → masih bisa disortir
+ikan target lolos dari lubang jaring → kabur ke laut, gak bisa diapa-apain
+                                       kecuali ganti jaring & tebar ulang
+```
+
+Itu alasan recall dimenangkan duluan.
+
 ## Status & Sisa Utang
 
 Keluarga eval formal ada 4 bagian:
@@ -148,17 +296,22 @@ Keluarga eval formal ada 4 bagian:
 
 **2/4 ground truth — ketutup.** → [ground-truth.md](ground-truth.md)
 
-**3/4 implementasi — belum.** Yang masuk ke situ:
+**3/4 implementasi — separuh.**
 
-- Hitung `recall@k` + `precision@k` beneran pakai gold questions (kerjaan code)
-- Cara memilih k yang wajar
+- ✅ Cara memilih k yang wajar → bagian "Cara Milih k" di dokumen ini (diulang & ketutup 2026-09-01; asimetri kerugian ditunda sampai rerank)
+- ⬜ Hitung `recall@k` + `precision@k` beneran pakai gold questions (kerjaan code)
 
-**4/4 metrik sensitif urutan — belum.**
-Recall & precision dua-duanya buta urutan — yang mengukur posisi jawaban di ranking
-(MRR / NDCG) itu metrik lain.
+**4/4 metrik sensitif urutan — separuh.** → [eval-ranking-metrics.md](eval-ranking-metrics.md)
+
+- ✅ MRR
+- ⬜ NDCG
 
 ## Riwayat
 
 - 2026-08-06 — dibahas: recall@k, trade-off k vs noise, sambungan ke overlap (diskusi R&D)
 - 2026-08-07 — dibuat: precision@k, jebakan (frekuensi, buta urutan, penyebut), analogi Bojong Kenyot (diskusi R&D)
 - 2026-08-07 — eval formal dipecah jadi konsep (dokumen ini) + implementasi + metrik urutan, sebagai item terpisah di MOL
+- 2026-08-17 — ditambah keypoint trade-off k: satu tuas dua arah berlawanan (recall naik/tetap vs precision turun), permintaan pemilik saat sesi cara milih k
+- 2026-08-29 — ditambah bagian "Cara Milih k" (asimetri kerugian, k = garis potong, aturan titik siku, plateau bukan penyakit k, beda level itungan binary vs rata-rata); jebakan buta-urutan diperluas: recall juga buta urutan, bukan cuma precision; analogi baru punya pemilik masuk — Juned & warung mpok Ipeh (k = etalase, gudang = index, plateau = barang gak distok) dan jaring tebar (asimetri). Izin tulis dari pemilik di sesi yang sama
+- 2026-09-01 — review: pointer ke metrik urutan dibenerin (status 4/4 dari "belum" jadi separuh + link ke eval-ranking-metrics.md; jebakan buta-urutan nunjuk MRR yang udah dipelajari); ukuran etalase (10) ditulis eksplisit di blok Juned
+- 2026-09-01 — "Cara Milih k" ditulis ulang dari nol setelah rollback: urutan baru (dua sebab → laporan multi-k → plateau → titik siku → bantalan & harganya), contoh Samsul/Udin/Tarno + analogi "tukang sensus gak turun lapangan" punya pemilik. Asimetri kerugian dipisah jadi "belum diajarin" (nunggu rerank). Ketutup 19:52, lolos cek-by-analogi tanpa dituntun

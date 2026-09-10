@@ -236,5 +236,5 @@ Urutannya mengikat: validasi berada **sebelum** `kumpulkan`, dan gagal keras
 
 ## Riwayat
 
-- 2026-08-07 — dibuat: pasangan code untuk ground-truth.md, 5 langkah + isi variabel tiap langkah, Python atas keputusan Iyan (diskusi R&D)
+- 2026-08-07 — dibuat: pasangan code untuk ground-truth.md, 5 langkah + isi variabel tiap langkah, Python atas keputusan pemilik (diskusi R&D)
 - 2026-08-07 — perbaikan: `hitung_baris` diberi penjaga untuk `hasil_topk` kosong (sebelumnya ZeroDivisionError); `topk_palsu` dilengkapi supaya mencakup keempat baris contoh. Semua angka di dokumen ini sudah dijalankan dan cocok dengan keluaran nyata

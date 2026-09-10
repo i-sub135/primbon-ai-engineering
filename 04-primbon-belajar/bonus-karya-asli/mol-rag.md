@@ -28,7 +28,11 @@ Aturan file ini:
 ## Belum dikerjain — urut prioritas
 
 - [ ] **[Eval formal 3/4]** Implementasi: hitung recall@k + precision@k beneran pakai gold questions, plus cara milih k — _prasyarat: tanpa angka, semua perbaikan di bawah gak bisa dinilai naik apa turun_
+  - [x] Cara milih k (diulang & ketutup 2026-09-01) — dua sebab nama gak nongol, laporan multi-k (tukang sensus), plateau, titik siku, bantalan & harganya, k = garis potong. Asimetri kerugian DITUNDA sampai rerank → [eval-retrieval-metrics.md](rag/eval-retrieval-metrics.md) bagian "Cara Milih k"
+  - [ ] Nulis code penghitungnya (kerjaan eksekusi, bukan kelas)
 - [ ] **[Eval formal 4/4]** Metrik sensitif urutan (MRR / NDCG): recall & precision buta urutan, ini yang ngukur posisi jawaban di ranking — _dibutuhin buat menilai rerank dan context ordering_
+  - [x] MRR (diulang & ketutup 2026-09-01) — RR = 1/posisi (bebas k, gak nongol = 0), Mean = level laporan, POV pemodal vs emak, kurva curam-di-depan + alasan desainnya, Mean sebagai level laporan → [eval-ranking-metrics.md](rag/eval-ranking-metrics.md)
+  - [ ] NDCG — ngitung semua jawaban bener (bukan cuma yang pertama), relevansi bertingkat (gain), bobot mengecil ke bawah (log2, lebih landai dari RR), normalisasi. Butuh contoh motivasi baru: pasangan yang RR-nya sama
 - [ ] Retrieval lanjutan: hybrid search (keyword + vector), reranking — _perbaikan retrieval paling besar dampaknya, tapi butuh alat ukur dulu_
 - [ ] Context ordering & lost-in-the-middle: urutan chunk di prompt itu keputusan
 - [ ] Source citation: jawaban menyebut file sumber (pakai metadata `source`) — _murah, dampak praktis langsung kerasa_
@@ -44,3 +48,9 @@ Aturan file ini:
 
 - 2026-08-07 — eval formal dipecah jadi 4 (konsep / ground truth / implementasi / metrik urutan), ditandai sebagai satu keluarga
 - 2026-08-07 — konvensi diubah: nomor cuma buat yang udah dicentang, yang belum cuma urut prioritas tanpa nomor
+- 2026-08-29 — item 3/4 dipecah jadi dua sub-centang; "cara milih k" ditutup (materinya nebeng di eval-retrieval-metrics.md), sisa nulis code. Item belum dapat nomor karena belum tutup penuh
+- 2026-08-29 — item 4/4 dipecah jadi dua sub-centang; MRR ditutup, file baru `rag/eval-ranking-metrics.md` lahir. Sisa NDCG
+- 2026-09-01 — review: sub-item NDCG ditambah relevansi bertingkat (gain) + catatan contoh motivasi harus beda dari keranjang A vs B (itu udah kebedain MRR)
+- 2026-09-01 — pemilik nyatain materi 08-29 (cara milih k + MRR) "keracunan": penjelasannya lompat, ambigu, nyender ke rerank/filter yang belum diajarin. Dua centang dicabut, status balik ke sebelum 08-29. Materi di KB TETAP disimpen sebagai arsip, tapi bukan bahan ngajar sampai diulang dari nol. Titik mulai ulang: cue Bojong Kenyot (recall/precision, 08-07) → trade-off k (08-17) → cara milih k
+- 2026-09-01 — cara milih k diulang dari nol dan ketutup 19:52 (lolos cek-by-analogi, contoh Samsul/Udin/Tarno buatan pemilik). Asimetri kerugian dikeluarin dari sub-item, nunggu rerank. MRR masih dicabut
+- 2026-09-01 — MRR diulang dari nol dan ketutup 21:25 lewat jalur Senin–Sabtu + POV pemodal. Eval formal 4/4 sisa NDCG
