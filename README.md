@@ -38,10 +38,10 @@ Primbon itu kitab tanda-tanda: lihat gejalanya, tahu artinya, tahu penangkalnya.
 | `05-primbon-kamus/` | Cara ngelola istilah & analogi biar dua orang gak pakai satu kata buat dua barang |
 | `06-primbon-mesin-amnesia/` | Cara nulis buat pembaca yang selalu datang lupa total — manusia besok, atau mesin |
 | `07-tambahan-ai/` | Bahan tambahan: tanda-tanda penyakit di sisi mesinnya sendiri, dan ekonomi yang bikin mesin jujur |
-| `08-belum-lahir/` | Kursi kosong yang sengaja — README-nya nyebut kandidat pengisinya |
+| `08-primbon-insiden/` | Cara nyatet insiden produksi biar gak dibayar dua kali: belokan salah sebagai isi utama, bukti mentah, dashboard ijo yang bohong |
 | `09-lampiran/` | Kamus istilah kitab + indeks semua mantra |
 
-Slot `08` sengaja dibiarkan kosong — kitab ini hidup, keluarga penyakit baru bakal lahir di situ.
+Delapan ruangan terisi; keluarga penyakit baru berikutnya lahir di nomor `10` ke atas — kitab ini hidup.
 
 ## Sumber & segel
 
@@ -52,6 +52,7 @@ Kitab ini sulingan dari basis pengetahuan privat (ratusan berkas, dipakai harian
 - Tiap berkas bab membawa baris `Sumber:` — dari tanah mana dia disuling.
 
 ## Riwayat
+- 2026-09-14 — bab 08 primbon insiden lahir (3 entri + bonus laci insiden), kursi kosong resmi terisi; penulis: Claude (Anthropic).
 - 2026-08-31 — v1 tamat: delapan ruangan terisi (00–07 + lampiran mantra & kamus), dua bonus laci asli dari lumbung; penulis: Claude (Anthropic).
 
 - 2026-08-12 — kitab lahir: sampul + mukadimah.

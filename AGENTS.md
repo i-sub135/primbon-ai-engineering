@@ -62,10 +62,10 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 | 05-primbon-kamus (3 entri) | KELAR | kamus lumbung + kosakata personal |
 | 06-primbon-mesin-amnesia (3 entri) | KELAR | direktif kerja lumbung buat agen + pola serah-terima |
 | 07-tambahan-ai (3 entri) | KELAR | bahan tambahan: penyakit pindah lantai, ekonomi kesalahan, pijakan luar |
-| 08-belum-lahir | KURSI KOSONG (sengaja) | README berisi kandidat pengisi: alur kerja, template, prompt-kalau-lolos-sisir |
+| 08-primbon-insiden (3 entri + bonus: laci insiden, 2 file) | KELAR (2026-09-14) | hub insiden lumbung (13-INCIDENT) |
 | 09-lampiran/kamus.md (32 istilah) | KELAR | istilah kitab, 3 kolom |
 
-Slot 05–08 penomoran sengaja longgar — keluarga penyakit baru boleh lahir, lewat ketok pemilik.
+Slot 00–09 terisi; bab baru lahir di nomor 10 ke atas, lewat ketok pemilik.
 
 ## Bonus karya asli
 
@@ -77,7 +77,7 @@ Semua ruangan v1 terisi: README + 00–07 + lampiran (mantra-mantra 20 mantra, k
 
 1. **Review pemilik** — bab 03–07, kedua bonus, dan lampiran BELUM direview pemilik (bab 00–02 sudah). Jangan anggap final; siap-siap ralat lewat Riwayat.
 2. **Kandidat lumbung yang belum disuling** — bahan diskusi pemilik, jangan dieksekusi sebelum diketok:
-   - `07-WORKFLOWS` (alur kerja git dkk) — generik, kandidat suling/bonus; belum disisir dalam.
+   - `07-WORKFLOWS` (alur kerja git, sop-siapin-release, aturan sinkron git-flow) — generik, kandidat bab 10; belum disisir dalam.
    - `templates/` — kandidat bonus karya paling murah: format catatan siap comot pembaca.
    - `08-GLOSSARY` — sudah disuling ke bab 05 (kosakata & sinyal mode); bonus salinannya belum, kalau pemilik mau.
    - `06-PROMPTS` — WAJIB disisir dulu: kadar dapurnya belum ketahuan.
@@ -102,6 +102,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-09-14 — bab 08 lahir: primbon insiden (3 entri) + bonus laci 13-INCIDENT (penyamaran: perusahaan, host, IP publik → 203.0.113.x, tailnet → 100.64.0.x, payment gateway, node-id); kursi kosong terisi, bab baru berikutnya nomor 10+; penulis: Claude (Anthropic).
 - 2026-09-10 — dua laci bonus disinkronkan dari lumbung via git (ADR 17→21; belajar 22→23 file); prosedur sinkron dibakukan di seksi baru; penulis: Claude (Anthropic).
 - 2026-08-31 — folder 08-belum-lahir dibuat resmi sebagai kursi kosong ber-README (ketok pemilik); penulis: Claude (Anthropic).
 - 2026-08-31 — v1 TAMAT: bab 07 (3 entri tambahan AI) + lampiran kamus (32 istilah) kelar; checkpoint ditulis ulang buat fase pasca-tamat; penulis: Claude (Anthropic).

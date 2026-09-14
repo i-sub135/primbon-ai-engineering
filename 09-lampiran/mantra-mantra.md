@@ -36,6 +36,11 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - **Salah gratis, ngeles bayar.** → `07-tambahan-ai/salah-gratis-ngeles-bayar.md`
 - **Kesepakatan tanpa pijakan luar itu gema.** → `07-tambahan-ai/pijakan-di-luar-lingkaran.md`
 
+## 08 — Primbon Insiden
+- **Akar masalah gratis setelah ketemu; belokan salahnya yang mahal.** → `08-primbon-insiden/belokan-salah-itu-isinya.md`
+- **Kesimpulan bisa berubah, bukti nggak — simpen buktinya.** → `08-primbon-insiden/kesimpulan-bisa-berubah-bukti-nggak.md`
+- **Ijo di dashboard belum tentu nyampe.** → `08-primbon-insiden/ijo-di-dashboard-belum-tentu-nyampe.md`
+
 ## Riwayat
 - 2026-08-12 — indeks lahir bareng bab 01.
 - 2026-08-12 — mantra bab 02 masuk.
@@ -44,3 +49,4 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - 2026-08-31 — mantra bab 05 masuk; penulis: Claude (Anthropic).
 - 2026-08-31 — mantra bab 06 masuk; penulis: Claude (Anthropic).
 - 2026-08-31 — mantra bab 07 masuk — indeks lengkap untuk v1; penulis: Claude (Anthropic).
+- 2026-09-14 — mantra bab 08 masuk (kursi kosong terisi); penulis: Claude (Anthropic).
