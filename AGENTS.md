@@ -16,7 +16,7 @@ Primbon AI Engineering: sulingan PUBLIK dari basis pengetahuan privat pemiliknya
 
 Tiap entri primbon adalah satu file .md dengan susunan tetap:
 
-1. `# Judul` — bernomor dalam babnya, bunyi mantra-able; NAMA FILE wajib berawalan nomor yang sama (`01-…`, `02-…`) biar urutan folder = urutan isi
+1. `# Judul` — bernomor dalam babnya, bunyi mantra-able; NAMA FILE wajib berpola `BB-NN-slug.md` — BB = nomor bab, NN = nomor entri (sama dengan nomor di judul) — biar nama file berdiri sendiri di luar foldernya dan urutan folder = urutan isi
 2. Baris `Sumber:` — dari tanah mana disuling (file/adat lumbung, digeneralisasi)
 3. `## TANDA` — gejala yang kelihatan mata, ditulis sebagai adegan yang bisa dikenali pembaca
 4. `## PENYAKIT` — mekanisme di baliknya, dibedah tuntas; tiap istilah teknis bawa arti harfiah
@@ -102,6 +102,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-09-14 — pola nama file entri dilengkapi nomor bab: `BB-NN-slug.md` (ketok pemilik: biar gak nyasar di luar folder); penulis: Claude (Anthropic).
 - 2026-09-14 — nama file semua entri diberi awalan nomor urut (sinkron dengan nomor judul), aturan dimasukkan ke format entri; penulis: Claude (Anthropic).
 - 2026-09-14 — bab 08 lahir: primbon insiden (3 entri) + bonus laci 13-INCIDENT (penyamaran: perusahaan, host, IP publik → 203.0.113.x, tailnet → 100.64.0.x, payment gateway, node-id); kursi kosong terisi, bab baru berikutnya nomor 10+; penulis: Claude (Anthropic).
 - 2026-09-10 — dua laci bonus disinkronkan dari lumbung via git (ADR 17→21; belajar 22→23 file); prosedur sinkron dibakukan di seksi baru; penulis: Claude (Anthropic).
