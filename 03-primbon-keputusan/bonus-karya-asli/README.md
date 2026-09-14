@@ -9,5 +9,5 @@ Folder ini salinan **satu laci catatan keputusan (ADR) utuh** — 17 ADR bernomo
 Mulai dari mana: `adr-012` (fallback dilarang bohong — paling universal), `adr-002` (batas wilayah AI), lalu `adr-009` + `adr-010` (sepasang keputusan yang saling menambal).
 
 ## Riwayat
-- 2026-08-12 — salinan pertama, 17 dokumen; penulis: Claude (Anthropic).
-- 2026-09-10 — disinkronkan ulang dari lumbung (clone git langsung): +4 ADR (014–017: plugin intent dispatcher, model intent, kuota chat harian, skema log LLM), dokumen lama disalin ulang; total 21 dokumen; penyamaran sama; pindaian sensor nol; penulis: Claude (Anthropic).
+- 2026-08-12 — salinan pertama, 17 dokumen. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-09-10 — disinkronkan ulang dari lumbung (clone git langsung): +4 ADR (014–017: plugin intent dispatcher, model intent, kuota chat harian, skema log LLM), dokumen lama disalin ulang; total 21 dokumen; penyamaran sama; pindaian sensor nol. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

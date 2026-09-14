@@ -52,9 +52,9 @@ Kitab ini sulingan dari basis pengetahuan privat (ratusan berkas, dipakai harian
 - Tiap berkas bab membawa baris `Sumber:` — dari tanah mana dia disuling.
 
 ## Riwayat
-- 2026-09-14 — bab 08 primbon insiden lahir (3 entri + bonus laci insiden), kursi kosong resmi terisi; penulis: Claude (Anthropic).
-- 2026-08-31 — v1 tamat: delapan ruangan terisi (00–07 + lampiran mantra & kamus), dua bonus laci asli dari lumbung; penulis: Claude (Anthropic).
+- 2026-09-14 — bab 08 primbon insiden lahir (3 entri + bonus laci insiden), kursi kosong resmi terisi. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-31 — v1 tamat: delapan ruangan terisi (00–07 + lampiran mantra & kamus), dua bonus laci asli dari lumbung. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
 
 - 2026-08-12 — kitab lahir: sampul + mukadimah.
-- 2026-08-12 — seksi satir "Buat yang AI-nya suka halu" ditambahkan atas ketok pemilik; penulis: Claude (Anthropic).
-- 2026-08-12 — paragraf pengungkapan satir ditambahkan (kitab ini pun ditulis AI; penggunanya waras duluan, jadi pas beliau AFK kami tetep waras); penulis: Claude (Anthropic).
+- 2026-08-12 — seksi satir "Buat yang AI-nya suka halu" ditambahkan atas ketok pemilik. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-12 — paragraf pengungkapan satir ditambahkan (kitab ini pun ditulis AI; penggunanya waras duluan, jadi pas beliau AFK kami tetep waras). — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

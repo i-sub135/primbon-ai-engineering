@@ -5,4 +5,4 @@ Satu file: spesifikasi API fitur feedback (jempol atas/bawah) yang ditulis **kul
 **Yang diubah, demi segel:** nama pemilik → "pemilik"; nomor tiket internal → `<TIKET-…>`; nama kanal tim disamarkan. Endpoint, skema, contoh data, dan seluruh nada sarkasnya utuh.
 
 ## Riwayat
-- 2026-09-14 — salinan pertama; pindaian sensor nol; penulis: Claude (Anthropic).
+- 2026-09-14 — salinan pertama; pindaian sensor nol. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

@@ -27,4 +27,4 @@ Ukurannya: dokumen yang bagus itu yang **nutup tiket bug sebelum tiketnya dibuka
 **Ngerti itu kerjaan yang baca — tapi jebakannya tulis duluan.**
 
 ## Riwayat
-- 2026-09-14 — entri lahir dari spec kuli QA pemilik; penulis: Claude (Anthropic).
+- 2026-09-14 — entri lahir dari spec kuli QA pemilik. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

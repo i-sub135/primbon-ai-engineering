@@ -40,4 +40,4 @@ Tiga kolom, ngikutin adat lumbung asal: **Arti** = arti harfiah buat nyocokin sa
 | Reproduksi | Bisa dipanggil ulang siapa pun dengan hasil sama | Resep yang dimasak orang lain, rasanya sama |
 
 ## Riwayat
-- 2026-08-31 — kamus kitab lahir, 32 istilah dari bab 00–07; penulis: Claude (Anthropic).
+- 2026-08-31 — kamus kitab lahir, 32 istilah dari bab 00–07. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

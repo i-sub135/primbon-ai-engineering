@@ -24,4 +24,4 @@ Dan tulis semuanya buat orang yang udah lupa — termasuk diri sendiri enam bula
 **Kesimpulan bisa berubah, bukti nggak — simpen buktinya.**
 
 ## Riwayat
-- 2026-09-14 — entri lahir; penulis: Claude (Anthropic).
+- 2026-09-14 — entri lahir. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

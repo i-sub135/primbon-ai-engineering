@@ -25,4 +25,4 @@ Kelola analogi kayak ngelola nama variabel di kode:
 **Satu analogi, satu konsep — analogi juga bisa bentrok.**
 
 ## Riwayat
-- 2026-08-31 — entri lahir; penulis: Claude (Anthropic).
+- 2026-08-31 — entri lahir. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

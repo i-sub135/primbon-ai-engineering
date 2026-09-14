@@ -14,4 +14,4 @@ Bab ini belum ada, dan itu bukan kelalaian — itu adat: nomor cuma dikasih ke y
 Bab ini cuma boleh diisi lewat ketok pemilik, dengan format entri baku kitab (lihat AGENTS.md). Kalau kandidat di atas ternyata lebih cocok jadi bonus daripada bab, kursi ini tetap kosong — kosong yang jujur lebih baik daripada bab yang dipaksa ada.
 
 ## Riwayat
-- 2026-08-31 — kursi kosong dibuat resmi + daftar kandidat; penulis: Claude (Anthropic).
+- 2026-08-31 — kursi kosong dibuat resmi + daftar kandidat. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

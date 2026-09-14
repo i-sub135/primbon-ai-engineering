@@ -28,4 +28,4 @@ Ukurannya gampang: kalau seseorang yang gak ikut kejadian bisa **ngelewatin semu
 **Akar masalah gratis setelah ketemu; belokan salahnya yang mahal.**
 
 ## Riwayat
-- 2026-09-14 — entri lahir, mengisi kursi kosong bab 08; penulis: Claude (Anthropic).
+- 2026-09-14 — entri lahir, mengisi kursi kosong bab 08. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

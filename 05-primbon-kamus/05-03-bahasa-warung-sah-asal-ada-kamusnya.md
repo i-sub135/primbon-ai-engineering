@@ -22,4 +22,4 @@ Jargon tanpa kamus itu **pagar**: dia ngebedain yang di dalem sama yang di luar,
 **Bahasa warung sah, asal ada kamusnya.**
 
 ## Riwayat
-- 2026-08-31 — entri lahir; penulis: Claude (Anthropic).
+- 2026-08-31 — entri lahir. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

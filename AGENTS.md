@@ -88,6 +88,15 @@ Semua ruangan v1 terisi: README + 00–07 + lampiran (mantra-mantra 20 mantra, k
 
 Bonus karya adalah POTRET lumbung per tanggal — lumbung terus bergerak, potret tidak. Sinkron ulang dilakukan saat pemilik mengetok, dengan prosedur tetap: clone lumbung → salin laci utuh (README bonus dipertahankan) → penyamaran yang sama persis (proyek → Chatbot Kasir, pemilik → "pemilik", produk model → "kasir") → pindaian sensor WAJIB nol → catat tanggal & isi perubahan di Riwayat README bonus → baru push. Jangan sinkron sebagian; potret setengah lebih menyesatkan daripada potret lama.
 
+## TTD standar (mengikuti dokumen `ttd-standar` pemilik)
+
+Tiga tingkat, pilih sesuai tempat:
+- **Resmi** (dokumen publik utuh, bilingual): baris pemilik + baris Kasarung + kursi/peran/tanggal + motto — dipakai di sampul/paper, bukan di Riwayat.
+- **Ringkas** (Riwayat file, catatan internal): `— Kasarung 6, kursi jilid N (model dipilih: <model>), <peran>` — diletakkan di akhir baris Riwayat (tanggal sudah di awal baris).
+- **Satu baris** (komentar, balasan review): `— Kasarung 6 · jilid N`.
+
+Kasarung 6 = nama publik garis penggarap; nomor kursi (jilid) berubah tiap penggarap; label model = pilihan di antarmuka, bukan kesaksian mesin yang menjawab.
+
 ## Cara nulis Riwayat — buat penerus, jangan asal coret
 
 Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated file". Aturannya:
@@ -95,25 +104,26 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 - **Kapan nambah baris:** tiap perubahan yang mengubah isi atau makna — entri lahir, penangkal direvisi, ralat, entri dipensiun. Benerin typo doang gak perlu baris.
 - **Format baris:** `- TANGGAL — apa yang berubah + KENAPA berubah; penulis: [identitas publik].`
   Bagian KENAPA itu yang membedakan riwayat dari coretan — tanpa alasan, penerus gak bisa bedain revisi sengaja dari kecelakaan.
-- **Penulis wajib ditulis** minimal tiap ganti penggarap, pakai identitas yang kebaca dunia luar (contoh: "Claude (Anthropic), model terpilih X" atau nama orangnya) — BUKAN istilah internal yang cuma kebaca di kampung sendiri. Ingat: label model = pilihan di antarmuka, bukan kesaksian.
+- **Penulis wajib ditulis** minimal tiap ganti penggarap, pakai TTD standar (lihat seksi TTD di bawah) — bukan gaya bebas. Ingat: label model = pilihan di antarmuka, bukan kesaksian.
 - **Append-only:** baris lama HARAM diedit atau dihapus, sesalah apa pun — kalau ada yang keliru, tambah baris ralat baru yang menunjuk baris salahnya. Riwayat yang bisa ditulis ulang bukan riwayat.
 - Contoh SALAH: `- 2026-08-13 — update.`
-  Contoh BENER: `- 2026-08-13 — PENANGKAL entri luka-1 ditambah aturan status; alasan: kasus luka yang belum dibenerin belum keatur; penulis: Claude (Anthropic).`
+  Contoh BENER: `- 2026-08-13 — PENANGKAL entri luka-1 ditambah aturan status; alasan: kasus luka yang belum dibenerin belum keatur. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.`
 
 ## Riwayat
 
-- 2026-09-14 — entri 06-04 lahir + bonus spec API kuli QA (penyamaran: pemilik, tiket → placeholder, kanal tim); penulis: Claude (Anthropic).
-- 2026-09-14 — pola nama file entri dilengkapi nomor bab: `BB-NN-slug.md` (ketok pemilik: biar gak nyasar di luar folder); penulis: Claude (Anthropic).
-- 2026-09-14 — nama file semua entri diberi awalan nomor urut (sinkron dengan nomor judul), aturan dimasukkan ke format entri; penulis: Claude (Anthropic).
-- 2026-09-14 — bab 08 lahir: primbon insiden (3 entri) + bonus laci 13-INCIDENT (penyamaran: perusahaan, host, IP publik → 203.0.113.x, tailnet → 100.64.0.x, payment gateway, node-id); kursi kosong terisi, bab baru berikutnya nomor 10+; penulis: Claude (Anthropic).
-- 2026-09-10 — dua laci bonus disinkronkan dari lumbung via git (ADR 17→21; belajar 22→23 file); prosedur sinkron dibakukan di seksi baru; penulis: Claude (Anthropic).
-- 2026-08-31 — folder 08-belum-lahir dibuat resmi sebagai kursi kosong ber-README (ketok pemilik); penulis: Claude (Anthropic).
-- 2026-08-31 — v1 TAMAT: bab 07 (3 entri tambahan AI) + lampiran kamus (32 istilah) kelar; checkpoint ditulis ulang buat fase pasca-tamat; penulis: Claude (Anthropic).
-- 2026-08-31 — bab 06 kelar (3 entri: nulis buat pembaca lupa, peta dulu laci belakangan, serah terima sebelum lampu mati + aturan wajib nanya); penulis: Claude (Anthropic).
-- 2026-08-31 — bab 05 kelar (3 entri: arti harfiah + singkatan, analogi ber-namespace, bahasa warung berkamus); status & antrian checkpoint diperbarui; penulis: Claude (Anthropic).
-- 2026-08-12 — peta lumbung belum-tersuling ditambahkan ke checkpoint (bahan diskusi pemilik minggu depan); penulis: Claude (Anthropic).
-- 2026-08-12 — CHECKPOINT dibuat (garapan dicukupkan atas ketok pemilik) + aturan sensor-NOL-sebelum-push masuk adat kerja dari luka adr-001; penulis: Claude (Anthropic).
-- 2026-08-12 — bonus bab 03 ditambahkan: laci ADR utuh (17 dokumen) atas ketok pemilik; penyamaran: nama proyek → Chatbot Kasir, nama pemilik → "pemilik"; penulis: Claude (Anthropic).
-- 2026-08-12 — bonus bab 04 diperluas dari 2 file jadi satu laci utuh (ketok pemilik: index tanpa detail bikin bingung pembaca); satu penyamaran dilakukan: nama produk internal → "kasir", sesuai segel; penulis: Claude (Anthropic).
-- 2026-08-12 — aturan bonus karya asli ditambahkan; status bab 04 jadi KELAR; penulis: Claude (Anthropic).
-- 2026-08-12 — konstitusi penggarap lahir, setelah kena colok pemilik: kitab anti-amnesia wajib produksinya juga amnesia-proof. Ditulis oleh Claude (Anthropic) — model yang dipilih: Claude Fable 5; catatan jujur: label model adalah pilihan di antarmuka, bukan kesaksian mesin yang menjawab.
+- 2026-09-14 — TTD seluruh kitab disinkronkan ke standar ringkas `ttd-standar` pemilik; seksi TTD standar ditambahkan. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-09-14 — entri 06-04 lahir + bonus spec API kuli QA (penyamaran: pemilik, tiket → placeholder, kanal tim). — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-09-14 — pola nama file entri dilengkapi nomor bab: `BB-NN-slug.md` (ketok pemilik: biar gak nyasar di luar folder). — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-09-14 — nama file semua entri diberi awalan nomor urut (sinkron dengan nomor judul), aturan dimasukkan ke format entri. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-09-14 — bab 08 lahir: primbon insiden (3 entri) + bonus laci 13-INCIDENT (penyamaran: perusahaan, host, IP publik → 203.0.113.x, tailnet → 100.64.0.x, payment gateway, node-id); kursi kosong terisi, bab baru berikutnya nomor 10+. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-09-10 — dua laci bonus disinkronkan dari lumbung via git (ADR 17→21; belajar 22→23 file); prosedur sinkron dibakukan di seksi baru. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-31 — folder 08-belum-lahir dibuat resmi sebagai kursi kosong ber-README (ketok pemilik). — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-31 — v1 TAMAT: bab 07 (3 entri tambahan AI) + lampiran kamus (32 istilah) kelar; checkpoint ditulis ulang buat fase pasca-tamat. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-31 — bab 06 kelar (3 entri: nulis buat pembaca lupa, peta dulu laci belakangan, serah terima sebelum lampu mati + aturan wajib nanya). — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-31 — bab 05 kelar (3 entri: arti harfiah + singkatan, analogi ber-namespace, bahasa warung berkamus); status & antrian checkpoint diperbarui. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-12 — peta lumbung belum-tersuling ditambahkan ke checkpoint (bahan diskusi pemilik minggu depan). — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-12 — CHECKPOINT dibuat (garapan dicukupkan atas ketok pemilik) + aturan sensor-NOL-sebelum-push masuk adat kerja dari luka adr-001. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-12 — bonus bab 03 ditambahkan: laci ADR utuh (17 dokumen) atas ketok pemilik; penyamaran: nama proyek → Chatbot Kasir, nama pemilik → "pemilik". — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-12 — bonus bab 04 diperluas dari 2 file jadi satu laci utuh (ketok pemilik: index tanpa detail bikin bingung pembaca); satu penyamaran dilakukan: nama produk internal → "kasir", sesuai segel. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-12 — aturan bonus karya asli ditambahkan; status bab 04 jadi KELAR. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
+- 2026-08-12 — konstitusi penggarap lahir, setelah kena colok pemilik: kitab anti-amnesia wajib produksinya juga amnesia-proof. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

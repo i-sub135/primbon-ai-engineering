@@ -22,4 +22,4 @@ Istilah yang dipake tanpa pernah dipaksa ditulis artinya itu **kata pinjaman**: 
 **Kata yang gak bisa lu artiin, belum boleh lu pake.**
 
 ## Riwayat
-- 2026-08-31 — entri lahir; penulis: Claude (Anthropic).
+- 2026-08-31 — entri lahir. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

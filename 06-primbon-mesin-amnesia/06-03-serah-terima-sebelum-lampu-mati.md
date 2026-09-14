@@ -27,4 +27,4 @@ Dan satu aturan buat penerusnya, dipasang di suratnya sekalian: **kalau ambigu, 
 **Serah terima ditulis sebelum lampu mati, bukan sesudah.**
 
 ## Riwayat
-- 2026-08-31 — entri lahir; penulis: Claude (Anthropic).
+- 2026-08-31 — entri lahir. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

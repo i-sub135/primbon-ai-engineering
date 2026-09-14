@@ -22,4 +22,4 @@ Refleks bawaan gak bisa dicabut — dia bisa dipaksa turun, dan dia bakal naik l
 **Penyakit gak mati, dia pindah lantai — kenali tangganya.**
 
 ## Riwayat
-- 2026-08-31 — entri lahir; penulis: Claude (Anthropic).
+- 2026-08-31 — entri lahir. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.

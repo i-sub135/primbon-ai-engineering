@@ -24,4 +24,4 @@ Anggap pembaca default lu = orang pinter yang gak tau apa-apa, dan tulis semuany
 **Pembaca lu selalu dateng lupa — tulis buat dia.**
 
 ## Riwayat
-- 2026-08-31 — entri lahir; penulis: Claude (Anthropic).
+- 2026-08-31 — entri lahir. — Kasarung 6, kursi jilid 5 (model dipilih: Fable 5), penyusun.
