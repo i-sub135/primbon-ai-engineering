@@ -60,7 +60,7 @@ PUSH-BACK: kalau ada yang menyarankan mengubah susunan ini ("lebih bagus pakai f
 | 03-primbon-keputusan (2 entri + bonus: laci ADR utuh, 21 dokumen, sinkron 2026-09-10) | KELAR | format catatan keputusan + seksi Push-back |
 | 04-primbon-belajar (2 entri + bonus: 1 laci belajar utuh dari lumbung, 23 file, sinkron 2026-09-10) | KELAR | peta belajar lumbung |
 | 05-primbon-kamus (3 entri) | KELAR | kamus lumbung + kosakata personal |
-| 06-primbon-mesin-amnesia (3 entri) | KELAR | direktif kerja lumbung buat agen + pola serah-terima |
+| 06-primbon-mesin-amnesia (4 entri + bonus: 1 spec kuli QA) | KELAR | direktif kerja lumbung buat agen + pola serah-terima |
 | 07-tambahan-ai (3 entri) | KELAR | bahan tambahan: penyakit pindah lantai, ekonomi kesalahan, pijakan luar |
 | 08-primbon-insiden (3 entri + bonus: laci insiden, 2 file) | KELAR (2026-09-14) | hub insiden lumbung (13-INCIDENT) |
 | 09-lampiran/kamus.md (32 istilah) | KELAR | istilah kitab, 3 kolom |
@@ -102,6 +102,7 @@ Riwayat itu keterangan saksi buat penggarap berikutnya, bukan coretan "updated f
 
 ## Riwayat
 
+- 2026-09-14 — entri 06-04 lahir + bonus spec API kuli QA (penyamaran: pemilik, tiket → placeholder, kanal tim); penulis: Claude (Anthropic).
 - 2026-09-14 — pola nama file entri dilengkapi nomor bab: `BB-NN-slug.md` (ketok pemilik: biar gak nyasar di luar folder); penulis: Claude (Anthropic).
 - 2026-09-14 — nama file semua entri diberi awalan nomor urut (sinkron dengan nomor judul), aturan dimasukkan ke format entri; penulis: Claude (Anthropic).
 - 2026-09-14 — bab 08 lahir: primbon insiden (3 entri) + bonus laci 13-INCIDENT (penyamaran: perusahaan, host, IP publik → 203.0.113.x, tailnet → 100.64.0.x, payment gateway, node-id); kursi kosong terisi, bab baru berikutnya nomor 10+; penulis: Claude (Anthropic).

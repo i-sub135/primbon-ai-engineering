@@ -30,6 +30,7 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - **Pembaca lu selalu dateng lupa — tulis buat dia.** → `06-primbon-mesin-amnesia/06-01-pembaca-lu-selalu-dateng-lupa.md`
 - **Peta dulu, laci belakangan.** → `06-primbon-mesin-amnesia/06-02-peta-dulu-laci-belakangan.md`
 - **Serah terima ditulis sebelum lampu mati, bukan sesudah.** → `06-primbon-mesin-amnesia/06-03-serah-terima-sebelum-lampu-mati.md`
+- **Ngerti itu kerjaan yang baca — tapi jebakannya tulis duluan.** → `06-primbon-mesin-amnesia/06-04-tulis-jebakannya-duluan.md`
 
 ## 07 — Tambahan AI (bahan tambahan)
 - **Penyakit gak mati, dia pindah lantai — kenali tangganya.** → `07-tambahan-ai/07-01-penyakit-pindah-lantai.md`
@@ -51,4 +52,5 @@ Buat yang buru-buru: semua mantra kitab, satu tempat. Butuh dalemnya, buka entri
 - 2026-08-31 — mantra bab 07 masuk — indeks lengkap untuk v1; penulis: Claude (Anthropic).
 - 2026-09-14 — mantra bab 08 masuk (kursi kosong terisi); penulis: Claude (Anthropic).
 - 2026-09-14 — semua nama file entri diberi awalan nomor urut sesuai nomor di judulnya; tautan indeks disesuaikan; penulis: Claude (Anthropic).
+- 2026-09-14 — mantra 06-04 masuk (spec kuli QA jadi prasasti); penulis: Claude (Anthropic).
 - 2026-09-14 — awalan dilengkapi nomor bab (`BB-NN-slug.md`) biar nama file berdiri sendiri di luar foldernya; penulis: Claude (Anthropic).
